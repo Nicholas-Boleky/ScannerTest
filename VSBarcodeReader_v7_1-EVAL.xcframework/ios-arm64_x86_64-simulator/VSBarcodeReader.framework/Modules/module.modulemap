@@ -1,0 +1,6 @@
+framework module VSBarcodeReader {
+  umbrella header "VSBarcodeReader.h"
+
+  export *
+  module * { export * }
+}

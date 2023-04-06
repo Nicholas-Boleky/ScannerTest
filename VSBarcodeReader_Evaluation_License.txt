@@ -1,0 +1,161 @@
+              VSBARCODEREADER EVALUATION LICENSE AGREEMENT
+
+This is a legal agreement between you, the Licensee, and Vision Smarts.  The terms of this Agreement govern your use of this software.  Please read this agreement carefully before you start using this software.   By using this software you are agreeing to be bound by this Agreement.  If you do not agree to the terms of this Agreement please delete all copies of this software and notify Vision Smarts.
+
+WHEREAS:
+
+A. VISION SMARTS has developed and created a software library named VSBarcodeReader that consists in a heavily optimized combination of mathematical tools and signal processing algorithms that can decode one-dimensional UPC-A/E and EAN-13/8 barcodes captured by a fixed-focus or an autofocus camera.
+
+B. VISION SMARTS intend to provide Licensee with a restricted version of VSBarcodeReader called hereinafter Evaluation VSBarcodeReader.
+
+C. Licensee desires to evaluate the VSBarcodeReader in connection with the opportunity to incorporate the VSBarcodeReader into future or current equipment (hereinafter Licensed Products).
+
+
+THE PARTIES AGREE AS FOLLOWS:
+
+0. Definitions
+
+0.1. VSBarcodeReader
+VSBarcodeReader means the technology referred above, developed by Vision Smarts that could be made available to Licensee.
+
+0.2. Intellectual Property Rights
+0.2.1. Intellectual Property Rights means any and all tangible and intangible rights associated with works of authorship throughout the world, including but not limited to copyrights, neighbouring rights, moral rights, and all derivative works thereof;
+0.2.2. Trademark and trade name rights and similar rights;
+0.2.3. Trade secret rights;
+0.2.4. Patents, designs, algorithms and other industrial property rights;
+0.2.5. All other intellectual and industrial property rights (of every kind and nature throughout the world and however designated) whether arising by operation of law, treaty, contract, license, or otherwise, together with all registrations, initial applications, renewals, extensions, continuations, divisions or reissues thereof now or hereafter in force (including any rights in any of the foregoing).
+
+0.3. Licensed Products
+Licensed Products means the future or current equipment that could be or are already manufactured and sold by Licensee and into which would be or could be incorporated the VSBarcodeReader when the Licensed Products are launched on the market.
+
+1. Grant of Rights and Licenses
+
+1.1. Temporary License to use the Evaluation VSBarcodeReader  
+Subject to the terms and conditions of this Agreement, Vision Smarts hereby grants to Licensee the nonexclusive, temporary, non-transferable, non-assignable right and license to use the Evaluation VSBarcodeReader for the sole purpose of evaluate the Evaluation VSBarcodeReader capabilities and specifications in order to develop future Licensed Products.
+
+1.2. Restrictions on use
+1.2.1. Notwithstanding anything to the contrary in this Agreement, Licensee is not authorized to distribute or sell the Evaluation VSBarcodeReader alone or on a bundled basis with marketed Licensed Products.
+1.2.2. Should Licensee desire to distribute, sell or launch on the market Licensed Products embedding VSBarcodeReader or any other Vision Smarts' technology then Vision Smarts and Licensee would have to enter into a specific license Agreement applicable to this specific case.
+1.2.3. Licensee shall not, nor authorize any third parties to, decompile, reverse engineer, disassemble or otherwise reduce the Evaluation VSBarcodeReader.
+1.2.4. Licensee shall protect Evaluation VSBarcodeReader against unauthorized dissemination and use the same degree of care it uses to protect and safeguard its own proprietary software and strategic information. Access to Evaluation VSBarcodeReader shall be given only to its employees who have a "need to know," who have been informed of the confidentiality obligations under this Agreement and who agree to comply with such obligations and Licensee is forbidden to disclose Evaluation VSBarcodeReader to any third party (other than to its affiliates on a confidential basis).
+1.2.5. Licensee shall take all necessary measures to ensure the respect of Vision Smarts' rights by Licensee's personnel.
+1.2.6. Vision Smarts has the right to implement in the Evaluation VSBarcodeReader, at any time but with prior notice to Licensee, any additional device, material or immaterial.
+
+1.3. Reservation of Rights
+1.3.1. Licensee acknowledges and agrees that Licensee's rights in respect of the Evaluation VSBarcodeReader shall be as expressly stated in this Agreement, and that Licensee shall not have any rights in respect of the Evaluation VSBarcodeReader which are greater than those rights expressly stated in this Agreement; limitations noted hereby in these articles are provided as examples and are not limitative.
+
+1.4. Cares by Licensee
+1.4.1. Licensee will use at least the same degree of care in safeguarding Vision Smarts' interest in the Evaluation VSBarcodeReader as it uses in safeguarding Licensee's interest in its own software and VSBarcodeReader products.
+
+1.5. VSBarcodeReader Specifications and Evaluation VSBarcodeReader Restrictions
+1.5.1. The Specifications for the VSBarcodeReader are set forth as foolows:
+          * VSBarcodeReader is a binary software library that:
+             - runs on the smartphone platforms;
+             - extract from a sequence of images of a UPC-A or EAN-13/8 barcode, its 13- or 8-digit numerical representation.
+          * VSBarcodeReader is not an application, it is a binary software component that can be integrated in an application to give it barcode-reading functionality.
+1.5.2. In order to enable Licensee to evaluate the VSBarcodeReader, Vision Smarts will provide Licensee with a Evaluation VSBarcodeReader presenting the same Specifications as for the VSBarcodeReader except for that Evaluation VSBarcodeReader will function for a limited time.
+1.5.3. Vision Smarts will have no obligation under this Agreement to modify the Evaluation VSBarcodeReader.
+
+2. Ownership and Intellectual Property Rights
+
+2.1. Ownership and Intellectual Property Rights
+2.1.1. All ownership, copyright and Intellectual Property Rights as well as commercial rights in or relating to the Evaluation VSBarcodeReader are and will remain the sole, exclusive and absolute property of Vision Smarts.  
+2.1.2. Licensee shall not acquire any title, copyright or other proprietary rights in the Evaluation VSBarcodeReader under this Agreement.  
+2.1.3. Except for the rights and licenses granted under this Agreement, Vision Smarts reserves all rights relating to the Evaluation VSBarcodeReader.
+
+2.2. Notice of Legal Protection
+Licensee is expressly informed that the VSBarcodeReader is protected and subject to the Belgian law of 30th June 1994 concerning computer software and by all international treaties governing intellectual property.
+
+2.3. Warranty of Right to License
+Vision Smarts warrants that Vision Smarts is the owner of the VSBarcodeReader and the Evaluation VSBarcodeReader and has the right to grant the rights and licenses set forth in this Agreement.
+
+3. Fees
+
+Evaluation VSBarcodeReader is provided free of charge.
+
+4. Evaluation Testing of VSBarcodeReader
+
+4.1. Evaluation Testing Term and Technical Support
+Within the term of this Agreement Licensee will complete Evaluation Testing of the Evaluation VSBarcodeReader to determine whether the Evaluation VSBarcodeReader conforms to the Specifications.
+
+4.2. Evaluation Testing Results
+4.2.1. At the conclusion of Evaluation Testing, Licensee will notify Vision Smarts in writing whether the Evaluation VSBarcodeReader meets the Specifications and is accepted or fails is rejected.  
+4.2.2. In the event of rejection, Licensee will specify the reasons for rejection.
+4.2.3. The results of Licensee's Evaluation Testing are for internal purposes only and may not be disclosed without Vision Smarts prior written consent.
+4.2.4. Accordingly, Licensee shall protect Evaluation Testing's results against unauthorized dissemination and use the same degree of care it uses to protect and safeguard its own confidential and strategic information. The results of Licensee's Evaluation Testing shall be disclosed only to its employees who have a "need to know," who have been informed of the confidentiality obligations under this Agreement and who agree to comply with such obligations and Licensee is forbidden to disclose the results of the evaluation to any third party (other than to its affiliates on a confidential basis).
+4.2.5. All Evaluation Testing's results shall be communicated by Licensee to Vision Smarts and Vision Smarts shall be entitled to use such results for its own personal purposes including new product development without any grant of right or license to Licensee on such new development of any kind.
+
+4.4. Evaluation VSBarcodeReader Product Performance Warranty
+4.4.1. The Evaluation VSBarcodeReader is presumed to be in a perfect condition when delivered to the Licensee.  
+4.4.2. Therefore Vision Smarts does not warrant any software and VSBarcodeReader embedded in the Evaluation VSBarcodeReader but shall be eager to help Licensee according to the Section related to the support during Evaluation Testing.
+4.4.3. In any case, Vision Smarts will not support Licensee if the Evaluation VSBarcodeReader has been modified by anyone other than Vision Smarts after its delivery or is running in an environment that does not conform to the Specifications.
+4.4.4. The foregoing warranty is in lieu of all other warranties, express or implied, including but not limited to, the implied warranties of merchantability and fitness for a particular purpose.
+
+5. Limitation of Liability and Infringement
+
+5.1. Licensee's Acknowledgement
+5.1.1. Licensee acknowledges that Vision Smarts does not represent or warrant that the Evaluation VSBarcodeReader will work on every operating environment, will have uninterrupted or error free operation.  Nevertheless, Vision Smarts undertakes to perform its contractual obligations with reasonable care according to usual professional practices.
+5.1.2. Licensee is solely responsible for its use of the Evaluation VSBarcodeReader. 
+
+5.2. IN NO EVENT SHALL VISION SMARTS BE LIABLE FOR ANY LOSS OF PROFITS, LOSS OR INTERRUPTION OF BUSINESS, NOR FOR INCIDENTAL, INDIRECT, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND, ARISING UNDER THIS AGREEMENT OR IN CONNECTION WITH THE PERFORMANCE HEREOF, HOWEVER CAUSED, ON ANY THEORY OF LIABILITY, RELATING TO THE OTHER PARTY OR ANY OTHER ENTITY, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.  IN ANY EVENT, THE AGGREGATE AMOUNT FOR WHICH VISION SMARTS MAY BE LIABLE TO LICENSEE FOR A BREACH OF THIS AGREEMENT SHALL BE EQUAL TO THE VALUE OF THE EVALUATION VSBARCODEREADER SET FORTH IN THIS AGREEMENT.
+
+5.3. Infringement
+Vision Smarts represents and warrants to Licensee that the Evaluation VSBarcodeReader will not infringe on any patent, trademark, copyright or other intellectual property rights of any third party, and does not contain technology which is a misappropriated trade secret of any third party.
+
+6. Term and Termination
+
+6.1. Term
+       This Agreement enters into force on the Effective Date and shall remain in force for two months. 
+
+6.2. Early contract termination 
+	Each party may terminate this Agreement by Notice given in the following situations:
+6.2.1. Termination for Breach
+If either party commits a breach of any of its material obligations under this Agreement then the other party may terminate this Agreement if such material breach remains uncured for six (6) calendar days after the date the terminating party has given written Notice of such material breach to the breaching party.
+6.2.2. Termination on Certain Events
+Either party may terminate this Agreement immediately by written Notice to the other party in the event the other party commences any bankruptcy proceeding under the laws of any jurisdiction, makes an assignment for the benefit of its creditors or admits in writing its inability to pay its debts as they mature, or a trustee or receiver is appointed for all or a substantial part of the other party's assets.
+
+6.3. Effect of Termination
+Upon termination of this Agreement all obligations of Vision Smarts to make Evaluation VSBarcodeReader available will cease and Licensee will then cease and desist from disposal of Evaluation VSBarcodeReader.  Licensee shall delete all copies of VSBarcodeReader and shall confirm the cease of disposal by an official and binding statement.
+
+7. General Provisions
+
+7.1. Independent Contractors
+The parties are independent contractors.  Nothing contained in this Agreement shall be construed to give either party the power to direct and control the day-to-day activities of the other or constitute the parties as agents, partners, joint ventures, co-owners or otherwise as participants in a joint or common undertaking.
+
+7.2. Force Majeure
+Neither party will incur any liability to the other party on account of any loss or damages resulting from any delay or failure to perform all or any part of this Agreement if such delay or failure is caused by an event of force majeure or by events, occurrences, or causes beyond the control of such party and not attributable to the negligence of such party.
+
+7.3. Assignment
+The parties are strictly forbidden to assign this Agreement or any interest in this Agreement, or delegate its duties under this Agreement, without the prior express written approval of the other party.
+ 
+7.4. Confidentiality
+7.4.1. The parties acknowledge that, in the course of performance of their obligations under this Agreement, each party may disclose confidential information to the other party.  Each party will protect the other party's confidential information from unauthorized dissemination and use with the same degree of care that such party uses to protect and safeguard its own like information, but not less than the degree of care that would be exercised by a prudent person given the sensitivity and strategic value of such confidential information. Confidential information shall be disclosed only to employees of the recipient who have a "need to know," who have been informed of the confidentiality obligations under this Agreement and who agree to comply with such obligations.  Neither party shall disclose any confidential information to any third party (other than to its affiliates on a confidential basis) without first obtaining the other party's written consent to such disclosure.
+7.4.2. The restrictions of this Article shall not apply to information that is:
+7.4.2.1. known to the receiving party at the time of receipt;
+7.4.2.2. independently developed by the receiving party without any use of the disclosing party's confidential information;
+7.4.2.3. lawfully obtained by the receiving party from a third party not bound by any obligation of confidentiality to the disclosing party;
+7.4.2.4. in the public domain when received or that thereafter enters the public domain through no fault of the receiving party;
+7.4.2.5. provided by the disclosing party to third parties without restriction; or
+7.4.2.6. disclosed by the receiving party pursuant to statute, regulation, or the order of a court of competent jurisdiction, provided that the receiving party promptly notifies the disclosing party in order to permit the disclosing party to seek a protective order or other appropriate relief.
+
+7.5. Amendment to this Agreement 
+To be effective amendments and additions to this Agreement must be made in writing. The requirement that amendments and additions to this Agreement must be in writing may only be waived in writing.
+
+7.6. No Waiver
+The failure of either party to enforce at any time any of the provisions of this Agreement, or the failure to require at any time performance by the other party of any of the provisions of this Agreement, will in no way be construed to be a present or future waiver of such provisions, nor in any way affect the validity of such provisions, or the ability of either party to enforce each and every such provision thereafter.
+
+7.7. Severability
+Should individual terms of this Agreement be or become invalid or unenforceable, this shall not affect the validity of the remaining terms of this Agreement.  
+
+7.8. Hierarchy and Conflicts in Documentation
+In case of any conflicts on the same subject between this Agreement and any prior agreements, purchase orders, acceptances, correspondences and other documents forming part of any order for Evaluation VSBarcodeReader placed by or for Licensee and accepted by Vision Smarts during the term of this Agreement, this Agreement shall govern and prevail, and the conflicting terms and conditions of any such documents shall be deemed deleted and shall not be binding upon either party insofar as they relate to this Agreement.
+
+8. Governing Law
+This Agreement shall be governed by, and construed in accordance with, the laws of Belgium which are applicable laws pursuant to article 98 of Belgian Federal Code on Private International Law, excluding any other choice of law rules and excluding the United Nations Convention on Contracts for the International Sale of Goods.
+
+
+VISION SMARTS SPRL
+Avenue du Champ des Monts 9
+B-1300 Wavre, BELGIUM
+Enterprise No. BE 0817.483.534 - RCM Nivelles.
+  

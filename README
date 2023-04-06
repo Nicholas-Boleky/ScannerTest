@@ -1,0 +1,210 @@
+BY USING THIS SOFTAWRE YOU ARE AGREEING TO BE BOUND BY THE EVALUATION LICENSE AGREEMENT, INCLUDED IN FILE VSBARCODEREADER_EVALUATION_LICENSE.TXT.
+IF YOU DO NOT AGREE TO THE TERMS OF THE AGREEMENT PLEASE DELETE ALL COPIES OF THIS SOFTWARE AND NOTIFY VISION SMARTS.
+
+
+*** EVALUATION VERSION - DO NOT USE FOR APP STORE NOR ENTERPRISE DISTRIBUTION ***
+
+
+This project contains sample code that demonstrates one way of using the iPhone OS APIs to capture a video stream and read barcodes using the VSBarcodeReader library.
+
+libVSBarcodeReader.a implements the VSBarcodeReader object that is declared in the VSBarcodeReader.h header file.
+
+libVSBarcodeReader.a is a "fat" library: it contains ARM versions (armv7, arm64 for the iOS device) and i386, x86_64 versions (for the simulator).
+However, the i386 & x86_64 versions are empty  (the readFromImageBufferOmnidirectional: and readFromImageBufferMultiple: methods always returns FALSE or nil).
+The i386 & x86_64 versions are only provided as a convenience to let the project link for the simulator (although the AVCapture classes are not available in the simulator).
+It is the developer's responsibilty not to display the LiveScannerView in the simulator.
+
+
+The view structure is as follows:
+
+For VSBarcodeReader-Swift:
+-MenuViewController.swift is the main view controller, it instanciates the following:
+-ScannerViewController.swift is the modal view (or popover) that implements the real-time scanner
+
+For VSBarcodeReader-ObjC:
+-VSBarcodeReaderViewController.m is the main view controller, it instanciates the following:
+-LiveScannerView.m is the modal view (or popover) that implements the real-time scanner
+-previewView is an empty subview defined in the nib.  The video preview layer is added on top, within the same bounds.
+
+The AVCaptureSession captures a continuous stream of images and the VSBarcodeReader object attempts barcode decoding.
+
+The readFromImageBufferOmnidirectional: method of the VSBarcodeReader object looks for barcodes anywhere in the image and in any orientation.  It returns the endpoints of a line where a 1D barcode has been detected and 'from' and 'to' values that can be used to give visual feedback to the user.  It expects image buffers in the BGRA, 2vuy or 420v pixel formats.
+
+The readFromImageBufferMultiple: method of the VSBarcodeReader object looks for barcodes in the specified rectangle image and in any orientation. It can also scan the entire image, or single horizontal or vertical line. This is the preferred method. A Future version will return multiple barcodes detected in the input image.
+
+These samples are view-based applications.  A Tab Bar or an OpenGL application would integrate the camera view differently.
+
+
+* About symbologies:
+- Only enable that symbologies that the application demand, since looking for more symbologies will slighlty slow down decoding and cause misreads of symbologies with weak error detection such as Codabar or ITF.
+- Code 39, Code 93, Code 128, Codabar, ITF, Std2of5, Telepen, GS1 Databar can only be read when all the bars are visible (no blurry barcodes).
+- Derived formats with check character like ITF-14 and Code 39 mod 43 are not explicitly supported,
+  but any checksum can easily be computed in the -(void)decodeImageBufferOmnidirectional: methods of LiveScannerViewController before stopping the scanner.
+
+
+* About ARM architectures and Xcode versions:
+- Xcode 4.5 introduces support for the iPhone 5 with the armv7s architecture.
+- Xcode 4.5 removes support for the armv6 architecture (iPhone 1st gen, iPhone 3G, iPod Touch 1st&2nd gen)
+- Xcode 5 introduces support for the iPhone 5s with the arm64 architecture.
+- Version 6.1 of VSBarcodeReader is the last version built for armv6. Use it if you need to support the older devices.
+- Version 6.1.1 is compiled for armv7 and armv7s and will not run on the older devices (Minimum Deployment Target is iOS 4.3)
+- Version 6.3 adds support for arm64
+
+
+(c) VISION SMARTS SPRL 2009-2023
+
+
+CHANGELOG
+---------
+
+v3.0:
+ - bug fix in wrapper object VSBarcodeReader
+ - faster scanning on iPhone 3GS (with autofocus)
+ - faster scanning on iPhone 3GS when focussing is slow
+
+v3.0.1:
+ - fixed slow memory leak
+ - removed CustomImagePicker class, moved all of its functionality to CameraOverlay
+ - add startLiveDecoding: and stopLiveDecoding: to CameraOverlay  
+      IMPORTANT: be sure to call stopLiveDecoding: whenever the camera view disappears,
+	             or else the timer and the screen capture will continue working in the background
+				 and consume resources
+
+v3.1:
+ - faster scanning on all iPhone models
+ - improved robustness when iPhone is not parallel to barcode surface on iPhone 3GS
+ 
+v3.11, v3.20:
+ - more robust to non-uniform illumination
+ 
+v3.21:
+ - speed optimization
+ 
+v3.3:
+ - support for iPhone 4
+ - increased timer frequency to 10 per second, in order to minimize the delay between images;
+   that does not mean that 10 images are decoded by second.
+ 
+v3.5
+ - EAN-8 support, off by default
+
+v4.0
+ - live video capture based on AVCaptureSession instead of semi-private UIGetScreenImage(), faster scanning
+ - requires iOS4.0 or later
+
+v4.5
+ - UPC-E support, off by default
+ 
+v5.0
+ - (iPhone 3GS or newer) speed improvements
+ - (iPhone 3GS or newer) better scanning on curved and other non-flat surfaces
+ - (iPhone 3GS or newer) scanning of upside-down barcodes
+ 
+v5.0.1
+ - uses Pixel Format '2vuy' (iPhone 3G) or '420f' (all other devices) for compatibility with VSReaderQR library
+
+v5.5
+ - add support for Code39, Interleaved 2 of 5 (ITF) and Code128
+ - new method that returns barcode as string, supports landscape-mode scanning
+
+v5.6
+ - add support for 420v Pixel Format (iPhone 3GS under iOS4)
+ 
+v5.7
+ - add support for Codabar (aka NW-7, Code 2 of 7, USD-4, etc.)
+ - bug fixes
+
+v5.7.1
+ - fix bug reporting wrong UPC/EAN barcode position
+
+v5.8
+ - bug fixes
+ - optimized acceptance thresholds to prevent misreads
+ - allowed upside-down scanning of blurry barcodes
+
+v6.0
+ - omnidirectional scanning (recommended for iPad)
+ - universal sample code (iPhone/iPod and iPad)
+ - bug fixes and performance improvements
+
+v6.0.1
+ - bug fix
+ 
+v6.1
+ - bug fix (potential crash) when scanning ITF in high-resolution
+ - improved robustness to bad lighting, printing defects, slighlty out-of-spec barcodes
+ - various speed improvements
+ - sample code: automatically switch to high-resolution images when decoding ITF, Code39, Code128 or Codabar
+ - sample code: adjust line width in omnidirectional mode
+ 
+v6.1.1
+ - add support for armv7s architecture (iPhone 5, Xcode 4.5+)
+ - drop support for armv6 (iPhone 3G). Min target is now iOS 4.3
+
+v6.1.2
+ - bug fix: returned EAN87 or UPCE barcode was sometimes corrupted when decoded with deprecated method -readFromImageBuffer:img readHeight:readHeight from:left to:right digits:res (other methods are unaffacted)
+ - sample code: support iPhone 5 screen size
+ 
+v6.2
+ - add support for Code93 and Standard 2 of 5 (aka Industrial 2 of 5)
+ - bug fix (potential memory access fault)
+ 
+v6.2.1
+ - removed deprecated methods
+ - migrated sample code to ARC
+
+v6.3
+ - add support for arm64: fat binary is now armv7 armv7s arm64 i386 x86_64 (last two: placeholder only)
+ - sample app targets iOS 5.1.1 to include arm64 slice
+ - always get high-resolution video
+
+v6.3.1
+ - sample code: workaround for autofocus problem on iPhone 4 under iOS 7.1.1
+ 
+v6.4
+ - sample code: skip one out of two frames to avoid excessive CPU load under iOS8
+     (apply the technique introduced in v6.3.1 to all devices)
+     the changes involve variable 'frameNumber' and macro 'FRAMESAMPLING'
+
+v6.4.1
+ - add support for Bitcode (iOS9 SDK, minimum deployment target iOS6)
+
+v6.4.2
+ - fix Bitcode support for Xcode 7.0.1
+
+v6.5
+ - add support for Telepen
+ - compensate for printing defects on UPC-A/EAN13
+ - speed-up decoding of sharp barcodes (all symbologies)
+
+v6.6
+ - faster barcode decoding (all symbologies)
+ - improved barcode detection in Omnidirectional mode
+ - decoding of damaged or wrinkled UPC/EAN/JAN codes
+
+v6.7
+ - Swift sample app
+
+v6.8
+ - add support for all GS1 Databar symbologies: Omnidirectional, Stacked Omnidirectional, Limited, Expanded, Expanded Stacked, Truncated, Stacked
+ - performance improvements across all symbologies
+
+v7.0
+ - 1D and QR scanner together in Swift and Objective-C sample apps
+ - add support for DataMatrix symbology
+ - new scan modes in Swift sample app: "Scan In Frame" and "Red Line Scan"
+ - new API supporting all scan modes
+ - increased tolerance for Code128 with small margins
+ - reduced probability of false detections
+ - performance improvements
+
+ v7.0.1
+ - fix API of empty stub for Simulator
+ - fix decoding of QR and DataMatrix text from raw data in sample code
+ 
+v7.1
+ - fix bug where scan result could be replaced by previous one
+
+ - replace fat static library (.a) with XCFramework including arm64-simulator slice
+
+*** EVALUATION VERSION - DO NOT USE FOR APP STORE NOR ENTERPRISE DISTRIBUTION ***

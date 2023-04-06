@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="WtR-xH-F4n">
+            <objects>
+                <viewController id="uJn-Ed-FyJ" customClass="InfoViewController" customModule="Vision_Smarts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fX7-VP-UQy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-HZ-tif">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="www.visionsmarts.com" id="5vO-Bn-2Lh">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="zHL-MM-IeG">
+                                            <connections>
+                                                <action selector="shareActionWithSender:" destination="uJn-Ed-FyJ" id="Fee-E2-d2M"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bos-Wi-Aeh">
+                                            <connections>
+                                                <segue destination="voN-K6-EI5" kind="unwind" identifier="closeInfo" unwindAction="closeInfoWithUnwindSegue:" id="z9q-9g-yye"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ly7-jt-Ibv">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="etO-g1-dZO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ly7-jt-Ibv" firstAttribute="leading" secondItem="etO-g1-dZO" secondAttribute="leading" id="7EF-Fs-B7X"/>
+                            <constraint firstItem="5a0-HZ-tif" firstAttribute="trailing" secondItem="etO-g1-dZO" secondAttribute="trailing" id="91F-Es-biX"/>
+                            <constraint firstItem="5a0-HZ-tif" firstAttribute="top" secondItem="etO-g1-dZO" secondAttribute="top" id="CVm-k0-MRl"/>
+                            <constraint firstItem="Ly7-jt-Ibv" firstAttribute="top" secondItem="5a0-HZ-tif" secondAttribute="bottom" id="Yus-vu-YZk"/>
+                            <constraint firstItem="5a0-HZ-tif" firstAttribute="leading" secondItem="etO-g1-dZO" secondAttribute="leading" id="ZnL-UQ-XJ8"/>
+                            <constraint firstItem="Ly7-jt-Ibv" firstAttribute="trailing" secondItem="etO-g1-dZO" secondAttribute="trailing" id="aj2-vI-vu6"/>
+                            <constraint firstItem="Ly7-jt-Ibv" firstAttribute="bottom" secondItem="etO-g1-dZO" secondAttribute="bottom" id="kYb-Vg-WPb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4rL-Ce-y2a"/>
+                    <connections>
+                        <outlet property="webViewContainer" destination="Ly7-jt-Ibv" id="Vka-ob-sfc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szF-t7-JFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="voN-K6-EI5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-560.49107142857144"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Vision_Smarts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qEp-VG-mPR" userLabel="MenuView">
+                                <rect key="frame" x="51" y="412" width="312" height="312"/>
+                                <subviews>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-8j-buW" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="SO7-GE-LeN"/>
+                                            <constraint firstAttribute="height" constant="72" id="w3C-bs-nPD"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="EAN UPC">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcW-lD-r8z" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Coda Bar">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZu-Ww-0VB" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="80" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Code 128">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="128" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nI5-eP-q1g" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="80" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Code 93">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="512" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-kR-Jb8" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Tele Pen">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="256" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Ok-C85" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="160" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Std 2of5">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWj-4l-Poy" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="160" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ITF">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzw-SP-HJf" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="80" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Code 39">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UC2-GE-v8X" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="240" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ALL">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="8192" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Klq-En-ta9" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="0.0" width="72" height="72"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="EAN +2">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="17.5"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="65536" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-1Y-5VZ" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="240" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Data Matrix">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="32768" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-T5-rRn" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="72" height="72"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="QR">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="16384" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pm8-fG-4dt" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="0.0" width="72" height="72"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="EAN +5">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="17.5"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="7168" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NsG-fF-rpp" customClass="ToggleGroupButton" customModule="Vision_Smarts" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="72" height="72"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="GS1 Databar">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="17.5"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wZu-Ww-0VB" firstAttribute="firstBaseline" secondItem="nI5-eP-q1g" secondAttribute="firstBaseline" id="0YD-YE-7fJ"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="bottom" secondItem="oWj-4l-Poy" secondAttribute="bottom" id="0hh-ZH-tzR"/>
+                                    <constraint firstItem="pm8-fG-4dt" firstAttribute="leading" secondItem="nI5-eP-q1g" secondAttribute="leading" id="1hU-qx-yWZ"/>
+                                    <constraint firstItem="oWj-4l-Poy" firstAttribute="leading" secondItem="IUg-1Y-5VZ" secondAttribute="leading" id="4it-g6-tav"/>
+                                    <constraint firstItem="pm8-fG-4dt" firstAttribute="leading" secondItem="Klq-En-ta9" secondAttribute="trailing" constant="8" id="6Jn-68-QUJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="AJF-Ok-C85" secondAttribute="trailing" constant="80" id="8g3-wB-MlB"/>
+                                    <constraint firstItem="wZu-Ww-0VB" firstAttribute="trailing" secondItem="oWj-4l-Poy" secondAttribute="trailing" id="AyM-wC-ShC"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="baseline" secondItem="AJF-Ok-C85" secondAttribute="baseline" id="BIi-gE-xGN"/>
+                                    <constraint firstItem="oWj-4l-Poy" firstAttribute="trailing" secondItem="IUg-1Y-5VZ" secondAttribute="trailing" id="DF4-UX-I6w"/>
+                                    <constraint firstItem="nI5-eP-q1g" firstAttribute="trailing" secondItem="AJF-Ok-C85" secondAttribute="trailing" id="EKf-TV-PVr"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="leading" secondItem="0ln-8j-buW" secondAttribute="trailing" constant="8" id="Fxa-Au-o35"/>
+                                    <constraint firstItem="pm8-fG-4dt" firstAttribute="trailing" secondItem="nI5-eP-q1g" secondAttribute="trailing" id="HUw-Pu-Z5K"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="leading" secondItem="qEp-VG-mPR" secondAttribute="leading" id="Hiv-tA-fkO"/>
+                                    <constraint firstAttribute="bottom" secondItem="AJF-Ok-C85" secondAttribute="bottom" constant="80" id="IhH-m8-o8n"/>
+                                    <constraint firstItem="nI5-eP-q1g" firstAttribute="top" secondItem="Fzw-SP-HJf" secondAttribute="top" id="Jmr-xA-BtZ"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="trailing" secondItem="VcW-lD-r8z" secondAttribute="trailing" id="KWC-Nn-ueb"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="top" secondItem="oWj-4l-Poy" secondAttribute="top" id="L1t-A4-IJP"/>
+                                    <constraint firstItem="NsG-fF-rpp" firstAttribute="leading" secondItem="pm8-fG-4dt" secondAttribute="trailing" constant="8" id="LfR-HU-WpG"/>
+                                    <constraint firstItem="pm8-fG-4dt" firstAttribute="top" secondItem="NsG-fF-rpp" secondAttribute="top" id="Mtk-7U-LZx"/>
+                                    <constraint firstItem="Fzw-SP-HJf" firstAttribute="trailing" secondItem="UC2-GE-v8X" secondAttribute="trailing" id="R0R-pt-Bz9"/>
+                                    <constraint firstAttribute="trailing" secondItem="NsG-fF-rpp" secondAttribute="trailing" id="Rnr-7v-n3V"/>
+                                    <constraint firstItem="pm8-fG-4dt" firstAttribute="firstBaseline" secondItem="NsG-fF-rpp" secondAttribute="firstBaseline" id="YIX-4K-hex"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="trailing" secondItem="zHx-T5-rRn" secondAttribute="trailing" id="ZWi-rg-kBq"/>
+                                    <constraint firstItem="UC2-GE-v8X" firstAttribute="leading" secondItem="IUg-1Y-5VZ" secondAttribute="trailing" constant="88" id="aR7-58-UXD"/>
+                                    <constraint firstAttribute="width" constant="312" id="cXM-MP-86a"/>
+                                    <constraint firstAttribute="bottom" secondItem="zHx-T5-rRn" secondAttribute="bottom" id="ceR-6V-pWJ"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="top" secondItem="pm8-fG-4dt" secondAttribute="top" id="chq-TC-SLT"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="leading" secondItem="zHx-T5-rRn" secondAttribute="leading" id="doC-Gf-p0o"/>
+                                    <constraint firstItem="Fzw-SP-HJf" firstAttribute="leading" secondItem="UC2-GE-v8X" secondAttribute="leading" id="ejo-nu-wIF"/>
+                                    <constraint firstItem="IUg-1Y-5VZ" firstAttribute="top" secondItem="UC2-GE-v8X" secondAttribute="top" id="exQ-37-t0Q"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="top" secondItem="0ln-8j-buW" secondAttribute="bottom" constant="8" id="hKf-QE-aAq"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="top" secondItem="Klq-En-ta9" secondAttribute="top" id="j3c-Xh-9F6"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="leading" secondItem="tnA-kR-Jb8" secondAttribute="leading" id="jwU-sf-6ap"/>
+                                    <constraint firstItem="UC2-GE-v8X" firstAttribute="top" secondItem="Fzw-SP-HJf" secondAttribute="bottom" constant="88" id="kF1-cm-6Bf"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="top" secondItem="wZu-Ww-0VB" secondAttribute="top" id="kNU-33-kj1"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="baseline" secondItem="wZu-Ww-0VB" secondAttribute="baseline" id="lXH-Ue-idQ"/>
+                                    <constraint firstItem="nI5-eP-q1g" firstAttribute="leading" secondItem="AJF-Ok-C85" secondAttribute="leading" id="nAu-hr-2Kw"/>
+                                    <constraint firstItem="zHx-T5-rRn" firstAttribute="bottom" secondItem="IUg-1Y-5VZ" secondAttribute="bottom" id="pYs-pa-9ww"/>
+                                    <constraint firstItem="wZu-Ww-0VB" firstAttribute="leading" secondItem="oWj-4l-Poy" secondAttribute="leading" id="pho-Ec-dZL"/>
+                                    <constraint firstItem="wZu-Ww-0VB" firstAttribute="top" secondItem="nI5-eP-q1g" secondAttribute="top" id="qNh-7E-Wvp"/>
+                                    <constraint firstItem="NsG-fF-rpp" firstAttribute="trailing" secondItem="Fzw-SP-HJf" secondAttribute="trailing" id="r6g-Rq-FAM"/>
+                                    <constraint firstItem="zHx-T5-rRn" firstAttribute="top" secondItem="tnA-kR-Jb8" secondAttribute="bottom" constant="8" id="rDq-R3-eYG"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="trailing" secondItem="wZu-Ww-0VB" secondAttribute="trailing" id="rN5-2V-tuv"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="leading" secondItem="VcW-lD-r8z" secondAttribute="leading" id="rQZ-oC-HNP"/>
+                                    <constraint firstItem="NsG-fF-rpp" firstAttribute="leading" secondItem="Fzw-SP-HJf" secondAttribute="leading" id="rVq-YS-6B2"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="trailing" secondItem="tnA-kR-Jb8" secondAttribute="trailing" id="rm8-5R-NOD"/>
+                                    <constraint firstItem="VcW-lD-r8z" firstAttribute="firstBaseline" secondItem="wZu-Ww-0VB" secondAttribute="firstBaseline" id="s6A-NY-IQb"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="leading" secondItem="wZu-Ww-0VB" secondAttribute="leading" id="s9r-Up-Hrs"/>
+                                    <constraint firstItem="nI5-eP-q1g" firstAttribute="baseline" secondItem="Fzw-SP-HJf" secondAttribute="baseline" id="t6f-rH-AhM"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="bottom" secondItem="Klq-En-ta9" secondAttribute="bottom" id="uAF-f4-WXG"/>
+                                    <constraint firstItem="zHx-T5-rRn" firstAttribute="top" secondItem="IUg-1Y-5VZ" secondAttribute="top" id="uyW-NT-bVh"/>
+                                    <constraint firstAttribute="height" constant="312" id="vJo-ai-dUe"/>
+                                    <constraint firstItem="tnA-kR-Jb8" firstAttribute="top" secondItem="VcW-lD-r8z" secondAttribute="bottom" constant="8" id="vNy-29-4kj"/>
+                                    <constraint firstItem="0ln-8j-buW" firstAttribute="top" secondItem="qEp-VG-mPR" secondAttribute="top" id="wMT-ar-Wsj"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="baseline" secondItem="pm8-fG-4dt" secondAttribute="baseline" id="wwA-ib-heu"/>
+                                    <constraint firstItem="Klq-En-ta9" firstAttribute="firstBaseline" secondItem="pm8-fG-4dt" secondAttribute="firstBaseline" id="xfl-wx-w0y"/>
+                                    <constraint firstItem="zHx-T5-rRn" firstAttribute="baseline" secondItem="UC2-GE-v8X" secondAttribute="baseline" id="xj8-tN-PQZ"/>
+                                    <constraint firstItem="oWj-4l-Poy" firstAttribute="top" secondItem="AJF-Ok-C85" secondAttribute="top" id="ybx-B5-Ao5"/>
+                                    <constraint firstItem="zHx-T5-rRn" firstAttribute="firstBaseline" secondItem="UC2-GE-v8X" secondAttribute="firstBaseline" id="zt6-M6-Vrf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm3-Is-CYT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="292"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="84" id="hK1-cy-A5R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="100" verticalCompressionResistancePriority="250" text="" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iyk-OX-NvD">
+                                <rect key="frame" x="20" y="44" width="374" height="292"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H56-aJ-39j">
+                                <rect key="frame" x="51" y="296" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="gVh-cH-iqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" image="arr-upload">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1r-Cn-wTt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-4e-UHV">
+                                <rect key="frame" x="330" y="296" width="33" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="BJ3-cQ-CIM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" image="gen-information">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJn-Ed-FyJ" kind="show" identifier="showInfo" id="Bro-ng-GKG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sis-oq-osG">
+                                <rect key="frame" x="51" y="764" width="118" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Scan One"/>
+                                <connections>
+                                    <segue destination="UJ1-jY-Jgw" kind="show" identifier="scanone" id="YAF-1e-kQx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rih-sK-zIh">
+                                <rect key="frame" x="51" y="813" width="118" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Batch Scan"/>
+                                <connections>
+                                    <segue destination="UJ1-jY-Jgw" kind="show" identifier="batchscan" id="W0d-Ox-JhP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="356-R9-NLt">
+                                <rect key="frame" x="215" y="764" width="148" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Scan in Frame"/>
+                                <connections>
+                                    <segue destination="UJ1-jY-Jgw" kind="show" identifier="framescan" id="y1Q-CT-xWn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-54-r8y">
+                                <rect key="frame" x="215" y="813" width="148" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Red Line Scan"/>
+                                <connections>
+                                    <segue destination="UJ1-jY-Jgw" kind="show" identifier="redlinescan" id="YyL-hK-U9I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="sis-oq-osG" firstAttribute="trailing" secondItem="rih-sK-zIh" secondAttribute="trailing" id="0RQ-mz-XCP"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0pw-T7-JnI"/>
+                            <constraint firstItem="sis-oq-osG" firstAttribute="leading" secondItem="rih-sK-zIh" secondAttribute="leading" id="1sB-xS-kuR"/>
+                            <constraint firstItem="356-R9-NLt" firstAttribute="trailing" secondItem="R6h-54-r8y" secondAttribute="trailing" id="2TR-TF-Bmv"/>
+                            <constraint firstItem="qEp-VG-mPR" firstAttribute="trailing" secondItem="356-R9-NLt" secondAttribute="trailing" id="2Vb-cn-MgM"/>
+                            <constraint firstItem="Kxf-4e-UHV" firstAttribute="trailing" secondItem="qEp-VG-mPR" secondAttribute="trailing" id="4Gb-GQ-Jr2"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="top" secondItem="iyk-OX-NvD" secondAttribute="top" id="6mt-N1-lQn"/>
+                            <constraint firstItem="rih-sK-zIh" firstAttribute="bottom" secondItem="R6h-54-r8y" secondAttribute="bottom" id="Cct-Sp-Sud"/>
+                            <constraint firstItem="sis-oq-osG" firstAttribute="baseline" secondItem="356-R9-NLt" secondAttribute="baseline" id="I20-bd-i8I"/>
+                            <constraint firstItem="iyk-OX-NvD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KFh-uT-iwF"/>
+                            <constraint firstItem="iyk-OX-NvD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KtY-DC-ZbN"/>
+                            <constraint firstItem="H56-aJ-39j" firstAttribute="leading" secondItem="qEp-VG-mPR" secondAttribute="leading" id="NZz-tL-v7g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qEp-VG-mPR" secondAttribute="bottom" constant="138" id="PFU-aP-c6H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rih-sK-zIh" secondAttribute="bottom" constant="8" id="RNs-PN-wEc"/>
+                            <constraint firstItem="sis-oq-osG" firstAttribute="top" secondItem="qEp-VG-mPR" secondAttribute="bottom" priority="750" constant="40" id="UPq-Ih-eGa"/>
+                            <constraint firstItem="qEp-VG-mPR" firstAttribute="top" secondItem="fm3-Is-CYT" secondAttribute="bottom" priority="500" constant="76" id="UpA-dj-d6L"/>
+                            <constraint firstItem="qEp-VG-mPR" firstAttribute="leading" secondItem="sis-oq-osG" secondAttribute="leading" id="YkA-2R-0vk"/>
+                            <constraint firstItem="356-R9-NLt" firstAttribute="leading" secondItem="R6h-54-r8y" secondAttribute="leading" id="eNU-gU-f4u"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hM5-dI-WIE"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kWH-w9-rcs"/>
+                            <constraint firstItem="H56-aJ-39j" firstAttribute="top" secondItem="Kxf-4e-UHV" secondAttribute="top" id="lhw-MF-Mzy"/>
+                            <constraint firstItem="iyk-OX-NvD" firstAttribute="centerX" secondItem="fm3-Is-CYT" secondAttribute="centerX" id="qEF-pT-0L7"/>
+                            <constraint firstItem="rih-sK-zIh" firstAttribute="top" secondItem="sis-oq-osG" secondAttribute="bottom" constant="8" id="qgm-WI-7Jo"/>
+                            <constraint firstItem="iyk-OX-NvD" firstAttribute="bottom" secondItem="fm3-Is-CYT" secondAttribute="bottom" id="rMm-p2-YIS"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="bottom" secondItem="H56-aJ-39j" secondAttribute="bottom" constant="8" id="tSf-Nu-87m"/>
+                            <constraint firstItem="fm3-Is-CYT" firstAttribute="centerX" secondItem="qEp-VG-mPR" secondAttribute="centerX" id="vML-nJ-gGK"/>
+                            <constraint firstItem="H56-aJ-39j" firstAttribute="bottom" secondItem="Kxf-4e-UHV" secondAttribute="bottom" id="zwn-QO-GON"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="iyk-OX-NvD" id="MRt-Y7-L6h"/>
+                        <outlet property="resultsView" destination="fm3-Is-CYT" id="gz4-Tp-eKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="ER2-Uj-2jC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="UJ1-jY-Jgw" customClass="ScannerViewController" customModule="Vision_Smarts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSC-nF-O3E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvD-Of-gzr" userLabel="Preview">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZD-Uz-uPV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner-frame" translatesAutoresizingMaskIntoConstraints="NO" id="Obr-yU-qDp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner-redline" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-ey-ekE">
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner" translatesAutoresizingMaskIntoConstraints="NO" id="rYC-6H-0ua">
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner-frame-landscape" translatesAutoresizingMaskIntoConstraints="NO" id="A6D-Gt-JOE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner-redline-landscape" translatesAutoresizingMaskIntoConstraints="NO" id="Fq7-O6-l8g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner-landscape" translatesAutoresizingMaskIntoConstraints="NO" id="hMk-py-DdF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="regular"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Scanning..." textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qC-hD-XQF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="751" constant="80" id="IFd-6p-hfC" userLabel="height ≥ 80 @750"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VD-t6-LC4">
+                                <rect key="frame" x="170.5" y="813" width="73" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="J6P-fh-414" kind="unwind" identifier="stopscan" unwindAction="closeScannerWithUnwindSegue:" id="vlG-Vk-Tr2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjB-H8-C0W">
+                                <rect key="frame" x="326" y="794" width="68" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="pho-flip"/>
+                                <connections>
+                                    <action selector="flipAction" destination="UJ1-jY-Jgw" eventType="touchUpInside" id="S8c-aS-maF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="623-ey-kZI">
+                                <rect key="frame" x="25" y="793" width="43" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="FbK-8R-xTQ"/>
+                                    <constraint firstAttribute="width" constant="43" id="fhe-on-nXH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="856-lightning-bolt"/>
+                                <state key="selected" image="965-lightning-bolt-selected"/>
+                                <connections>
+                                    <action selector="torchAction" destination="UJ1-jY-Jgw" eventType="touchUpInside" id="GDY-Dz-sps"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ec8-b6-yAS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="TzW-ey-ekE" firstAttribute="trailing" secondItem="WSC-nF-O3E" secondAttribute="trailing" id="1D4-JA-kZi"/>
+                            <constraint firstItem="Fq7-O6-l8g" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="1xZ-iQ-nWH"/>
+                            <constraint firstItem="rYC-6H-0ua" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="20U-HE-cP6"/>
+                            <constraint firstItem="4qC-hD-XQF" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="4f2-y1-ICX"/>
+                            <constraint firstAttribute="trailing" secondItem="Obr-yU-qDp" secondAttribute="trailing" id="4fc-yd-biQ"/>
+                            <constraint firstItem="4qC-hD-XQF" firstAttribute="top" secondItem="ec8-b6-yAS" secondAttribute="top" id="5HB-nO-jHo"/>
+                            <constraint firstItem="Fq7-O6-l8g" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="5aV-iv-gha"/>
+                            <constraint firstItem="hMk-py-DdF" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="5qT-oo-QGY"/>
+                            <constraint firstItem="hMk-py-DdF" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="7A9-a2-x0o"/>
+                            <constraint firstItem="4qC-hD-XQF" firstAttribute="bottom" secondItem="sZD-Uz-uPV" secondAttribute="bottom" id="A7P-eN-QuF"/>
+                            <constraint firstItem="rYC-6H-0ua" firstAttribute="centerY" secondItem="WSC-nF-O3E" secondAttribute="centerY" id="BJg-e6-z7q"/>
+                            <constraint firstItem="Obr-yU-qDp" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="BSP-KH-9pK"/>
+                            <constraint firstAttribute="bottom" secondItem="Obr-yU-qDp" secondAttribute="bottom" id="Bpo-rJ-frp"/>
+                            <constraint firstAttribute="bottom" secondItem="uvD-Of-gzr" secondAttribute="bottom" id="ES9-jw-DfV"/>
+                            <constraint firstAttribute="trailing" secondItem="Fq7-O6-l8g" secondAttribute="trailing" id="Eea-iV-cjf"/>
+                            <constraint firstItem="QjB-H8-C0W" firstAttribute="bottom" secondItem="ec8-b6-yAS" secondAttribute="bottom" id="GHZ-48-Fza"/>
+                            <constraint firstAttribute="trailing" secondItem="rYC-6H-0ua" secondAttribute="trailing" id="Jgw-Pd-Tuw"/>
+                            <constraint firstItem="sZD-Uz-uPV" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="LC9-sH-Yqy"/>
+                            <constraint firstAttribute="trailing" secondItem="4qC-hD-XQF" secondAttribute="trailing" id="Mwq-Nz-MzB"/>
+                            <constraint firstAttribute="bottom" secondItem="Fq7-O6-l8g" secondAttribute="bottom" id="PhQ-vb-A5F"/>
+                            <constraint firstItem="uvD-Of-gzr" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="Q3j-kM-Bgj"/>
+                            <constraint firstItem="A6D-Gt-JOE" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="bt3-no-U1g"/>
+                            <constraint firstItem="TzW-ey-ekE" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="eN6-0v-p8j"/>
+                            <constraint firstAttribute="trailing" secondItem="hMk-py-DdF" secondAttribute="trailing" id="ecd-YW-4uM"/>
+                            <constraint firstItem="7VD-t6-LC4" firstAttribute="bottom" secondItem="ec8-b6-yAS" secondAttribute="bottom" constant="-8" id="f6Y-I2-y8w"/>
+                            <constraint firstItem="sZD-Uz-uPV" firstAttribute="top" secondItem="WSC-nF-O3E" secondAttribute="top" id="fqt-2v-hAa"/>
+                            <constraint firstAttribute="bottom" secondItem="A6D-Gt-JOE" secondAttribute="bottom" id="iwl-5s-hTe"/>
+                            <constraint firstAttribute="bottom" secondItem="hMk-py-DdF" secondAttribute="bottom" id="kIA-hn-7fO"/>
+                            <constraint firstItem="A6D-Gt-JOE" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="kRI-gG-XgW"/>
+                            <constraint firstItem="ec8-b6-yAS" firstAttribute="trailing" secondItem="QjB-H8-C0W" secondAttribute="trailing" constant="20" id="kvc-Xe-jif"/>
+                            <constraint firstItem="623-ey-kZI" firstAttribute="leading" secondItem="ec8-b6-yAS" secondAttribute="leading" constant="25" id="nKc-3V-naD"/>
+                            <constraint firstItem="ec8-b6-yAS" firstAttribute="bottom" secondItem="623-ey-kZI" secondAttribute="bottom" id="oyK-ah-NQo"/>
+                            <constraint firstAttribute="trailing" secondItem="uvD-Of-gzr" secondAttribute="trailing" id="pSs-4t-AZf"/>
+                            <constraint firstItem="uvD-Of-gzr" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="ppD-RS-teL"/>
+                            <constraint firstItem="Obr-yU-qDp" firstAttribute="leading" secondItem="WSC-nF-O3E" secondAttribute="leading" id="t83-0I-Gq6"/>
+                            <constraint firstAttribute="trailing" secondItem="A6D-Gt-JOE" secondAttribute="trailing" id="uLd-cP-k7N"/>
+                            <constraint firstAttribute="trailing" secondItem="sZD-Uz-uPV" secondAttribute="trailing" id="wlK-Ro-kPy"/>
+                            <constraint firstItem="7VD-t6-LC4" firstAttribute="centerX" secondItem="WSC-nF-O3E" secondAttribute="centerX" id="wpl-fQ-FkF"/>
+                            <constraint firstItem="TzW-ey-ekE" firstAttribute="centerY" secondItem="WSC-nF-O3E" secondAttribute="centerY" id="yfv-rp-eXD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fit-qg-nSS"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="7VD-t6-LC4" id="yAG-bT-2Qb"/>
+                        <outlet property="flipButton" destination="QjB-H8-C0W" id="kGj-j4-7w5"/>
+                        <outlet property="landscapeFrameOverlay" destination="A6D-Gt-JOE" id="Pdg-Do-zl5"/>
+                        <outlet property="landscapeOverlay" destination="hMk-py-DdF" id="qsJ-kS-NCg"/>
+                        <outlet property="landscapeRedlineOverlay" destination="Fq7-O6-l8g" id="UxP-zS-aQB"/>
+                        <outlet property="portraitFrameOverlay" destination="Obr-yU-qDp" id="xxN-SD-31Q"/>
+                        <outlet property="portraitOverlay" destination="rYC-6H-0ua" id="Eoy-ad-wjY"/>
+                        <outlet property="portraitRedlineOverlay" destination="TzW-ey-ekE" id="tPY-pl-ERr"/>
+                        <outlet property="preview" destination="uvD-Of-gzr" id="aqG-mY-j3k"/>
+                        <outlet property="resultsLabel" destination="4qC-hD-XQF" id="8Mv-hx-6pc"/>
+                        <outlet property="torchButton" destination="623-ey-kZI" id="qhA-8H-Loe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pym-5Z-SY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="J6P-fh-414" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="135.9375"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="y1Q-CT-xWn"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemGreenColor"/>
+    <resources>
+        <image name="856-lightning-bolt" width="28" height="56"/>
+        <image name="965-lightning-bolt-selected" width="28" height="56"/>
+        <image name="arr-upload" width="32" height="32"/>
+        <image name="gen-information" width="32" height="32"/>
+        <image name="pho-flip" width="48" height="48"/>
+        <image name="scanner" width="600" height="300"/>
+        <image name="scanner-frame" width="600" height="1800"/>
+        <image name="scanner-frame-landscape" width="600" height="100"/>
+        <image name="scanner-landscape" width="600" height="100"/>
+        <image name="scanner-redline" width="600" height="300"/>
+        <image name="scanner-redline-landscape" width="600" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

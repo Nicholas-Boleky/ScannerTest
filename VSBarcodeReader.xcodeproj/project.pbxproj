@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* VSBarcodeReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* VSBarcodeReaderAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* VSBarcodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* VSBarcodeReaderViewController.m */; };
+		FA0389DF13C1DD4C004A5D6F /* VSBarcodeReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0389DE13C1DD4C004A5D6F /* VSBarcodeReaderViewController.xib */; };
+		FA1F608D1675E19A005C757E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1F608C1675E19A005C757E /* Default-568h@2x.png */; };
+		FA2DCAE210EBD0BE001D8C02 /* LiveScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA86FDD3107DD553005E1BF9 /* LiveScannerViewController.xib */; };
+		FA3093D4150766A600D1C8AD /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3093D3150766A600D1C8AD /* MainWindow-iPad.xib */; };
+		FA372B6923F592F000C063C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA372B6823F592F000C063C1 /* Launch Screen.storyboard */; };
+		FA3EEE08258909B600C0D5C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		FA3EEE10258909F000C0D5C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86FEAA107DE30F005E1BF9 /* AudioToolbox.framework */; };
+		FA3EEE1425890A2B00C0D5C4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3EEDF8258908E500C0D5C4 /* OpenGLES.framework */; };
+		FA3EEE1725890A3F00C0D5C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		FA3EEE1C25890A5800C0D5C4 /* BarcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3EEE1A25890A5700C0D5C4 /* BarcodeHelper.m */; };
+		FA3EEE212589297800C0D5C4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FA6E328F107F369A00E1AD39 /* README */; };
+		FA5C6E232546CB40007AE885 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FACC0BF6250B821300658F75 /* libc++.tbd */; };
+		FA5C6E242546CB97007AE885 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FACC0BF6250B821300658F75 /* libc++.tbd */; };
+		FA6E3290107F369A00E1AD39 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FA6E328F107F369A00E1AD39 /* README */; };
+		FA86FDD7107DD566005E1BF9 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA86FDD6107DD566005E1BF9 /* beep.wav */; };
+		FA9417D211F87C3F00152AE7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9417D111F87C3F00152AE7 /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA9417D911F87E3000152AE7 /* LiveScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9417D811F87E3000152AE7 /* LiveScannerViewController.m */; };
+		FA9417DD11F87E8900152AE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9417DC11F87E8900152AE7 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA9417F111F87ECE00152AE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9417F011F87ECE00152AE7 /* QuartzCore.framework */; };
+		FA9FA5BA15079ABB0029A348 /* cameraToggle.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9FA5B915079ABB0029A348 /* cameraToggle.png */; };
+		FAB3E5161305406600FF528A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3E5141305406500FF528A /* Icon.png */; };
+		FAB3E5171305406600FF528A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3E5151305406600FF528A /* Icon@2x.png */; };
+		FAC1838D11FCD64500F35D45 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9417EA11F87EA300152AE7 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FAE11780280590740014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */; };
+		FAE11781280590740014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAE117832805907F0014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */; };
+		FAE117842805907F0014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAEB3DA3246D33A500E7E2F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3D94246D33A300E7E2F1 /* SceneDelegate.swift */; };
+		FAEB3DA4246D33A500E7E2F1 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3D95246D33A300E7E2F1 /* ScannerViewController.swift */; };
+		FAEB3DA5246D33A500E7E2F1 /* BarcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3D96246D33A300E7E2F1 /* BarcodeHelper.m */; };
+		FAEB3DA6246D33A500E7E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB3D98246D33A300E7E2F1 /* LaunchScreen.storyboard */; };
+		FAEB3DA8246D33A500E7E2F1 /* ToggleGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3D9A246D33A400E7E2F1 /* ToggleGroupButton.swift */; };
+		FAEB3DA9246D33A500E7E2F1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3D9B246D33A400E7E2F1 /* InfoViewController.swift */; };
+		FAEB3DAA246D33A500E7E2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB3D9C246D33A400E7E2F1 /* Assets.xcassets */; };
+		FAEB3DAD246D33A500E7E2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB3DA0246D33A500E7E2F1 /* Main.storyboard */; };
+		FAEB3DAE246D33A500E7E2F1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3DA1246D33A500E7E2F1 /* MenuViewController.swift */; };
+		FAEB3DAF246D33A500E7E2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3DA2246D33A500E7E2F1 /* AppDelegate.swift */; };
+		FAEB3DB0246D348000E7E2F1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3E5141305406500FF528A /* Icon.png */; };
+		FAEB3DB1246D348000E7E2F1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3E5151305406600FF528A /* Icon@2x.png */; };
+		FAEB3DB2246D365B00E7E2F1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1F608C1675E19A005C757E /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAE11782280590740014AFD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAE11781280590740014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE117852805907F0014AFD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAE117842805907F0014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* VSBarcodeReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBarcodeReaderAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* VSBarcodeReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBarcodeReaderAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* VSBarcode ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSBarcode ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* VSBarcodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBarcodeReaderViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* VSBarcodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBarcodeReaderViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* VSBarcodeReader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBarcodeReader_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* VSBarcodeReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VSBarcodeReader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FA0389DE13C1DD4C004A5D6F /* VSBarcodeReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VSBarcodeReaderViewController.xib; sourceTree = "<group>"; };
+		FA1F608C1675E19A005C757E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA3093D3150766A600D1C8AD /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "VSBarcodeReader-ObjC/iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		FA372B6823F592F000C063C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA3EEDF8258908E500C0D5C4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FA3EEE1A25890A5700C0D5C4 /* BarcodeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeHelper.m; sourceTree = "<group>"; };
+		FA3EEE1B25890A5800C0D5C4 /* BarcodeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeHelper.h; sourceTree = "<group>"; };
+		FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "VSBarcodeReader_v7_1-EVAL.xcframework"; sourceTree = "<group>"; };
+		FA6E328F107F369A00E1AD39 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FA86FDD3107DD553005E1BF9 /* LiveScannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveScannerViewController.xib; sourceTree = "<group>"; };
+		FA86FDD6107DD566005E1BF9 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		FA86FEAA107DE30F005E1BF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA9417D111F87C3F00152AE7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FA9417D711F87E3000152AE7 /* LiveScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveScannerViewController.h; sourceTree = "<group>"; };
+		FA9417D811F87E3000152AE7 /* LiveScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveScannerViewController.m; sourceTree = "<group>"; };
+		FA9417DC11F87E8900152AE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA9417EA11F87EA300152AE7 /* CoreMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FA9417F011F87ECE00152AE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA9FA5B915079ABB0029A348 /* cameraToggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraToggle.png; sourceTree = "<group>"; };
+		FAB3E5141305406500FF528A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FAB3E5151305406600FF528A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FAC061F82100CBE900306779 /* VSBarcodeReader_Evaluation_License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VSBarcodeReader_Evaluation_License.txt; sourceTree = "<group>"; };
+		FACC0BF6250B821300658F75 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FAEB3D7E246D1F4900E7E2F1 /* VSBarcode Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSBarcode Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB3D93246D33A200E7E2F1 /* VSBarcodeReaderSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VSBarcodeReaderSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAEB3D94246D33A300E7E2F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAEB3D95246D33A300E7E2F1 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		FAEB3D96246D33A300E7E2F1 /* BarcodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeHelper.m; sourceTree = "<group>"; };
+		FAEB3D98246D33A300E7E2F1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAEB3D9A246D33A400E7E2F1 /* ToggleGroupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleGroupButton.swift; sourceTree = "<group>"; };
+		FAEB3D9B246D33A400E7E2F1 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		FAEB3D9C246D33A400E7E2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEB3D9D246D33A400E7E2F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEB3D9E246D33A400E7E2F1 /* BarcodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeHelper.h; sourceTree = "<group>"; };
+		FAEB3DA0246D33A500E7E2F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAEB3DA1246D33A500E7E2F1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FAEB3DA2246D33A500E7E2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				FA3EEE1725890A3F00C0D5C4 /* UIKit.framework in Frameworks */,
+				FA5C6E242546CB97007AE885 /* libc++.tbd in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				FA9417D211F87C3F00152AE7 /* CoreVideo.framework in Frameworks */,
+				FA3EEE1425890A2B00C0D5C4 /* OpenGLES.framework in Frameworks */,
+				FA3EEE10258909F000C0D5C4 /* AudioToolbox.framework in Frameworks */,
+				FA9417DD11F87E8900152AE7 /* AVFoundation.framework in Frameworks */,
+				FA9417F111F87ECE00152AE7 /* QuartzCore.framework in Frameworks */,
+				FAC1838D11FCD64500F35D45 /* CoreMedia.framework in Frameworks */,
+				FAE11780280590740014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEB3D7B246D1F4900E7E2F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5C6E232546CB40007AE885 /* libc++.tbd in Frameworks */,
+				FA3EEE08258909B600C0D5C4 /* UIKit.framework in Frameworks */,
+				FAE117832805907F0014AFD6 /* VSBarcodeReader_v7_1-EVAL.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* VSBarcode ObjC.app */,
+				FAEB3D7E246D1F4900E7E2F1 /* VSBarcode Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				FAC061F82100CBE900306779 /* VSBarcodeReader_Evaluation_License.txt */,
+				FA6E328F107F369A00E1AD39 /* README */,
+				FAEB3D7F246D1F4900E7E2F1 /* VSBarcodeReader-Swift */,
+				FAEB3D92246D20D800E7E2F1 /* VSBarcodeReader-ObjC */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F608C1675E19A005C757E /* Default-568h@2x.png */,
+				FAB3E5141305406500FF528A /* Icon.png */,
+				FAB3E5151305406600FF528A /* Icon@2x.png */,
+				FA9FA5B915079ABB0029A348 /* cameraToggle.png */,
+				FA86FDD6107DD566005E1BF9 /* beep.wav */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA63BC612805849C00ADF9D0 /* VSBarcodeReader_v7_1-EVAL.xcframework */,
+				FACC0BF6250B821300658F75 /* libc++.tbd */,
+				FA3EEDF8258908E500C0D5C4 /* OpenGLES.framework */,
+				FA86FEAA107DE30F005E1BF9 /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				FA9417D111F87C3F00152AE7 /* CoreVideo.framework */,
+				FA9417DC11F87E8900152AE7 /* AVFoundation.framework */,
+				FA9417EA11F87EA300152AE7 /* CoreMedia.framework */,
+				FA9417F011F87ECE00152AE7 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3093D2150766A000D1C8AD /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				FA3093D3150766A600D1C8AD /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FAEB3D7F246D1F4900E7E2F1 /* VSBarcodeReader-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB3D9C246D33A400E7E2F1 /* Assets.xcassets */,
+				FAEB3D9D246D33A400E7E2F1 /* Info.plist */,
+				FAEB3D98246D33A300E7E2F1 /* LaunchScreen.storyboard */,
+				FAEB3DA0246D33A500E7E2F1 /* Main.storyboard */,
+				FAEB3DA2246D33A500E7E2F1 /* AppDelegate.swift */,
+				FAEB3D94246D33A300E7E2F1 /* SceneDelegate.swift */,
+				FAEB3DA1246D33A500E7E2F1 /* MenuViewController.swift */,
+				FAEB3D9B246D33A400E7E2F1 /* InfoViewController.swift */,
+				FAEB3D95246D33A300E7E2F1 /* ScannerViewController.swift */,
+				FAEB3D9A246D33A400E7E2F1 /* ToggleGroupButton.swift */,
+				FAEB3D93246D33A200E7E2F1 /* VSBarcodeReaderSwift-Bridging-Header.h */,
+				FAEB3D9E246D33A400E7E2F1 /* BarcodeHelper.h */,
+				FAEB3D96246D33A300E7E2F1 /* BarcodeHelper.m */,
+			);
+			path = "VSBarcodeReader-Swift";
+			sourceTree = "<group>";
+		};
+		FAEB3D92246D20D800E7E2F1 /* VSBarcodeReader-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* VSBarcodeReader_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				1D3623240D0F684500981E51 /* VSBarcodeReaderAppDelegate.h */,
+				1D3623250D0F684500981E51 /* VSBarcodeReaderAppDelegate.m */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				28D7ACF60DDB3853001CB0EB /* VSBarcodeReaderViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* VSBarcodeReaderViewController.m */,
+				FA0389DE13C1DD4C004A5D6F /* VSBarcodeReaderViewController.xib */,
+				FA9417D711F87E3000152AE7 /* LiveScannerViewController.h */,
+				FA9417D811F87E3000152AE7 /* LiveScannerViewController.m */,
+				FA86FDD3107DD553005E1BF9 /* LiveScannerViewController.xib */,
+				FA3EEE1B25890A5800C0D5C4 /* BarcodeHelper.h */,
+				FA3EEE1A25890A5700C0D5C4 /* BarcodeHelper.m */,
+				8D1107310486CEB800E47090 /* VSBarcodeReader-Info.plist */,
+				FA372B6823F592F000C063C1 /* Launch Screen.storyboard */,
+				FA3093D2150766A000D1C8AD /* iPad */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			path = "VSBarcodeReader-ObjC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* VSBarcodeReaderObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VSBarcodeReaderObjC" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				FAE11782280590740014AFD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VSBarcodeReaderObjC;
+			productName = VSBarcodeReader;
+			productReference = 1D6058910D05DD3D006BFB54 /* VSBarcode ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAEB3D7D246D1F4900E7E2F1 /* VSBarcodeReaderSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEB3D8F246D1F4D00E7E2F1 /* Build configuration list for PBXNativeTarget "VSBarcodeReaderSwift" */;
+			buildPhases = (
+				FAEB3D7A246D1F4900E7E2F1 /* Sources */,
+				FAEB3D7B246D1F4900E7E2F1 /* Frameworks */,
+				FAEB3D7C246D1F4900E7E2F1 /* Resources */,
+				FAE117852805907F0014AFD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VSBarcodeReaderSwift;
+			productName = VSBarcodeReaderSwift;
+			productReference = FAEB3D7E246D1F4900E7E2F1 /* VSBarcode Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = W96L4UJULU;
+						ProvisioningStyle = Automatic;
+					};
+					FAEB3D7D246D1F4900E7E2F1 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VSBarcodeReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEB3D7D246D1F4900E7E2F1 /* VSBarcodeReaderSwift */,
+				1D6058900D05DD3D006BFB54 /* VSBarcodeReaderObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				FA2DCAE210EBD0BE001D8C02 /* LiveScannerViewController.xib in Resources */,
+				FA86FDD7107DD566005E1BF9 /* beep.wav in Resources */,
+				FA6E3290107F369A00E1AD39 /* README in Resources */,
+				FAB3E5161305406600FF528A /* Icon.png in Resources */,
+				FA372B6923F592F000C063C1 /* Launch Screen.storyboard in Resources */,
+				FAB3E5171305406600FF528A /* Icon@2x.png in Resources */,
+				FA0389DF13C1DD4C004A5D6F /* VSBarcodeReaderViewController.xib in Resources */,
+				FA3093D4150766A600D1C8AD /* MainWindow-iPad.xib in Resources */,
+				FA9FA5BA15079ABB0029A348 /* cameraToggle.png in Resources */,
+				FA1F608D1675E19A005C757E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEB3D7C246D1F4900E7E2F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEB3DAD246D33A500E7E2F1 /* Main.storyboard in Resources */,
+				FAEB3DB1246D348000E7E2F1 /* Icon@2x.png in Resources */,
+				FAEB3DAA246D33A500E7E2F1 /* Assets.xcassets in Resources */,
+				FAEB3DB0246D348000E7E2F1 /* Icon.png in Resources */,
+				FAEB3DA6246D33A500E7E2F1 /* LaunchScreen.storyboard in Resources */,
+				FAEB3DB2246D365B00E7E2F1 /* Default-568h@2x.png in Resources */,
+				FA3EEE212589297800C0D5C4 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* VSBarcodeReaderAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* VSBarcodeReaderViewController.m in Sources */,
+				FA3EEE1C25890A5800C0D5C4 /* BarcodeHelper.m in Sources */,
+				FA9417D911F87E3000152AE7 /* LiveScannerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEB3D7A246D1F4900E7E2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEB3DAF246D33A500E7E2F1 /* AppDelegate.swift in Sources */,
+				FAEB3DA5246D33A500E7E2F1 /* BarcodeHelper.m in Sources */,
+				FAEB3DA8246D33A500E7E2F1 /* ToggleGroupButton.swift in Sources */,
+				FAEB3DAE246D33A500E7E2F1 /* MenuViewController.swift in Sources */,
+				FAEB3DA3246D33A500E7E2F1 /* SceneDelegate.swift in Sources */,
+				FAEB3DA9246D33A500E7E2F1 /* InfoViewController.swift in Sources */,
+				FAEB3DA4246D33A500E7E2F1 /* ScannerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 71;
+				DEVELOPMENT_TEAM = W96L4UJULU;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSBarcodeReader-ObjC/VSBarcodeReader_Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "VSBarcodeReader-ObjC/VSBarcodeReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.VSBarcodeReaderObjC;
+				PRODUCT_NAME = "VSBarcode ObjC";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 71;
+				DEVELOPMENT_TEAM = W96L4UJULU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSBarcodeReader-ObjC/VSBarcodeReader_Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "VSBarcodeReader-ObjC/VSBarcodeReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.VSBarcodeReaderObjC;
+				PRODUCT_NAME = "VSBarcode ObjC";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FAEB3D90246D1F4D00E7E2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 71;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DCJ6D372A2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VSBarcodeReader-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.VSBarcodeReaderSwift098;
+				PRODUCT_NAME = "VSBarcode Swift";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "VSBarcodeReader-Swift/VSBarcodeReaderSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEB3D91246D1F4D00E7E2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 71;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DCJ6D372A2;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VSBarcodeReader-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.VSBarcodeReaderSwift098;
+				PRODUCT_NAME = "VSBarcode Swift";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "VSBarcodeReader-Swift/VSBarcodeReaderSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VSBarcodeReaderObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VSBarcodeReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEB3D8F246D1F4D00E7E2F1 /* Build configuration list for PBXNativeTarget "VSBarcodeReaderSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEB3D90246D1F4D00E7E2F1 /* Debug */,
+				FAEB3D91246D1F4D00E7E2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

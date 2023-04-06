@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveScannerViewController">
+            <connections>
+                <outlet property="flipButton" destination="27" id="28"/>
+                <outlet property="helpLabel" destination="17" id="25"/>
+                <outlet property="previewView" destination="22" id="26"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <toolbar autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                    <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ffa-RN-5bf"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="flexibleSpace" id="15"/>
+                        <barButtonItem style="plain" systemItem="cancel" id="11">
+                            <connections>
+                                <action selector="cancel" destination="-1" id="18"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="16"/>
+                    </items>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="P46-Zp-bFK"/>
+                    </constraints>
+                    <string key="text">Place red line across barcode
+from about 3" or 8 cm
+Hold steady</string>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                    <rect key="frame" x="334" y="89" width="60" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Sv0-v5-EDT"/>
+                        <constraint firstAttribute="height" constant="31" id="q0q-Qd-Qhz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="cameraToggle.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="flipCamera" destination="-1" eventType="touchUpInside" id="29"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="22" firstAttribute="top" secondItem="17" secondAttribute="top" id="3cr-on-V65"/>
+                <constraint firstItem="22" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="4AV-LF-8be"/>
+                <constraint firstItem="22" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="AX9-jf-40h"/>
+                <constraint firstItem="10" firstAttribute="leading" secondItem="K3g-DK-MCv" secondAttribute="leading" id="LKH-5y-YO2"/>
+                <constraint firstItem="27" firstAttribute="trailing" secondItem="1" secondAttribute="trailingMargin" id="SZ4-nS-Vwr"/>
+                <constraint firstItem="22" firstAttribute="top" secondItem="1" secondAttribute="top" id="T3O-q2-0A6"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="TBw-mr-Fmf"/>
+                <constraint firstItem="K3g-DK-MCv" firstAttribute="trailing" secondItem="10" secondAttribute="trailing" id="Y7f-eG-dCj"/>
+                <constraint firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="aPj-5A-rMZ"/>
+                <constraint firstAttribute="bottom" secondItem="22" secondAttribute="bottom" id="kVK-Og-yFR"/>
+                <constraint firstItem="27" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" constant="-20" id="pf8-wI-p0b"/>
+                <constraint firstItem="10" firstAttribute="bottom" secondItem="K3g-DK-MCv" secondAttribute="bottom" id="xwz-jA-5Ad"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="K3g-DK-MCv"/>
+            <point key="canvasLocation" x="130.43478260869566" y="149.33035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cameraToggle.png" width="120" height="62"/>
+    </resources>
+</document>
